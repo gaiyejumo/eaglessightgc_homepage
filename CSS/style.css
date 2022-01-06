@@ -10,10 +10,11 @@
 
 header {
 	width: 100%;
-	border: 5px solid green;
 	height: 100vh;
-	background-color: #020412;
+	/*background-color: #020412;*/
+	background-color: #fff;
 	padding: 0 8.5%;
+	color: #black;
 	position: relative;
 }
 
@@ -25,11 +26,121 @@ nav {
 	padding: 30px 0 10px;
 }
 
+/*My logo setting*/
 .logo {
-	width: 120px;
+	width: 150px;
 	cursor: pointer;
+	/*text-decoration: none;*/
 }
-.menu-icon {
-	width: 35px;
+
+/* Menu CSS formatting */
+.menu {
+	background-color: transparent;
+	border: none;
 	cursor: pointer;
+	display: flex;
+	padding: 0;
 }
+.line {
+  fill: none;
+  stroke: black;
+  stroke-width: 6;
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.line1 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+.line2 {
+  stroke-dasharray: 60 60;
+  stroke-width: 6;
+}
+.line3 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+.opened .line1 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+.opened .line2 {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+  stroke-width: 6;
+}
+.opened .line3 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+
+/*  Navigation CSS */
+nav ul {
+	flex: 1;
+	text-align: center;
+	padding-right: 40px;
+
+}
+
+nav ul li {
+	display: inline-block;
+	list-style: none;
+	margin: 10px 30px;
+}
+
+nav ul li a{
+	color: #black;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 17px;
+	transition: .5s;
+}
+ /* Text-box Formatting */
+.text-box{
+	margin-top: 15%;
+	font-size: 17px;
+	letter-spacing: 1px;
+	line-height: 26px;
+}
+
+.text-box h1{
+	font-size: 75px;
+	line-height: 160px;
+	color: #black;
+	text-decoration: none;
+	text-transform: none;
+}
+
+.text-box p{
+	color: #black;
+	text-decoration: none;
+	text-decoration-color: black;
+}
+
+.text-box a{
+	text-decoration-color: black;
+	text-decoration: none;
+	margin-top: 30px;
+	display: inline-block;
+	border-radius: 6px;
+	border: 1px solid #f34950d;
+	color: #black;
+	padding: 10px 30px;
+}
+
+.text-box .btn{
+	margin-top: 30px;
+	text-decoration: none;
+	color: black;
+	background-color: 
+	margin: 30px;
+	font-weight: 600;
+}
+
+
+
+
+
