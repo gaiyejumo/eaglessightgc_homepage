@@ -114,12 +114,6 @@ nav ul li a{
 	text-transform: none;
 }
 
-.text-box p{
-	color: #black;
-	text-decoration: none;
-	text-decoration-color: black;
-}
-
 .text-box a{
 	text-decoration-color: black;
 	text-decoration: none;
@@ -128,7 +122,7 @@ nav ul li a{
 	border-radius: 6px;
 	border: 1px solid #f34950d;
 	color: #black;
-	padding: 10px 30px;
+	padding: 10px;
 }
 
 .text-box .btn{
